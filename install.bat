@@ -87,6 +87,17 @@ if errorlevel 1 (
     echo ⚠️ AVISO: Algumas dependências adicionais falharam.
 )
 
+REM Instala browsers do Playwright
+echo 🎭 Instalando browsers do Playwright (Chromium)...
+playwright install chromium
+if errorlevel 1 (
+    echo ⚠️ AVISO: Falha ao instalar browsers do Playwright.
+    echo Tentando instalar apenas as dependências do sistema...
+    playwright install-deps chromium
+) else (
+    echo ✅ Playwright Chromium instalado com sucesso.
+)
+
 REM Cria diretórios necessários
 echo 🔄 Criando estrutura de diretórios ULTRA-ROBUSTA...
 if not exist "src\uploads" mkdir src\uploads

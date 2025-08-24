@@ -26,6 +26,7 @@ urllib3>=2.0.0
 # Web Scraping & Automation
 selenium>=4.15.0
 webdriver-manager>=4.0.0
+playwright>=1.40.0
 beautifulsoup4>=4.12.0
 lxml>=5.0.0
 html5lib>=1.1
@@ -89,23 +90,14 @@ colorlog>=6.7.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
-# Advanced Analytics and Prediction
-pandas>=2.0.0
-numpy>=1.24.0
-scikit-learn>=1.3.0
-statsmodels>=0.14.0
-
-# Natural Language Processing
-spacy>=3.6.0
+# Advanced Analytics (já incluído acima)
 textblob>=0.17.1
 nltk>=3.8.1
 
 # Time Series Analysis
 prophet>=1.1.4
 
-# Image Processing & OCR
-Pillow>=10.0.0
-pytesseract>=0.3.10
+# Computer Vision
 opencv-python>=4.8.0
 
 # Advanced Visualization
@@ -138,12 +130,9 @@ youtube-transcript-api>=0.6.0
 exa-py>=1.0.0
 serpapi>=0.1.5
 
-# Selenium para extração de imagens
-selenium>=4.15.0
-webdriver-manager>=4.0.0
+# Selenium já incluído acima
 
-# Processamento de imagens
-Pillow>=10.0.0
+# Pillow já incluído acima
 
 # Performance & Caching
 flask-compress>=1.13
